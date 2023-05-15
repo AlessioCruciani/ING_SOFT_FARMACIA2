@@ -248,7 +248,7 @@ class Ui_PaginaAggiungiOrdini(object):
 
         idUtilizzatoreStr = str(self.identificatoreUtilizzatore)
 
-        queryNuovoOrdine = "INSERT INTO ordine VALUES('', '" + dataOdierna + "' , 'false', '" + dataFutura + "', " + idUtilizzatoreStr + ")"
+        queryNuovoOrdine = "INSERT INTO ordine VALUES('', '" + dataOdierna + "' , '0', '" + dataFutura + "', " + idUtilizzatoreStr + ")"
         mycursor.execute(queryNuovoOrdine)
 
         mydb.commit()

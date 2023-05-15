@@ -136,7 +136,6 @@ class Ui_AggiungiFidelity(object):
 
         self.azzeraCashBack()
 
-        self.ButtonCreaFidelity.clicked.connect(self.creaNuovaFidelity)
 
     def retranslateUi(self, AggiungiFidelity):
         _translate = QtCore.QCoreApplication.translate
@@ -154,14 +153,13 @@ class Ui_AggiungiFidelity(object):
 
         mydb = mysql.connector.connect(host="localhost",user="alessio",password="alessio",database="prova")
         mycursor = mydb.cursor()
-        try:
-            queryAggiungiFidelity = "INSERT INTO fidelitycard VALUES ('', '" + nome + "','" + cognome + "','" + email + "','" + telefono + "', 0, " + idutilizzatoreStr + ")"
-            mycursor.execute(queryAggiungiFidelity)
 
-            mydb.commit()
-            AggiungiFidelity.hide()
-        except:
-            pass
+        queryAggiungiFidelity = "INSERT INTO fidelitycard VALUES ('', '" + nome + "','" + cognome + "','" + email + "','" + telefono + "', 0, " + idutilizzatoreStr + ")"
+        mycursor.execute(queryAggiungiFidelity)
+
+        mydb.commit()
+
+
 
     def azzeraCashBack(self):
         meseCorrente = str(date.today().month)

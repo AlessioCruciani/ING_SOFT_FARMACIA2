@@ -97,7 +97,6 @@ class Ui_PaginaFidelity(object):
         self.caricaDatiFidelity()
         self.ButtonCerca.clicked.connect(self.cercaFidelityCard)
         #self.ButtonAggiungi.clicked.connect(self.aggiungiFidelityCard)
-
         self.retranslateUi(PaginaFidelity)
         QtCore.QMetaObject.connectSlotsByName(PaginaFidelity)
 
