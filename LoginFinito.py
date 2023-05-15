@@ -26,7 +26,7 @@ class Ui_Login(object):
         self.frameLogo.setStyleSheet("\n"
                                      "background: no-repeat fixed center;\n"
                                      "background-color: transparent;\n"
-                                     "background-image: url(C:/Users/aless/Desktop/uiFILEs/drm_logo-removebg-preview.png);\n"
+                                     "background-image: url(background-image: url(ImmaginiProgetto/ImmaginiPrenotazioni/SfondoEsiti.png);\n"
                                      "border-radius: 50px\n"
                                      "")
         self.frameLogo.setFrameShape(QtWidgets.QFrame.StyledPanel)
