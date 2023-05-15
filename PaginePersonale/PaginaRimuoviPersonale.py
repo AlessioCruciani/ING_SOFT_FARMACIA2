@@ -90,7 +90,7 @@ class Ui_PaginaRimuoviDipendenti(object):
         mydb = mysql.connector.connect(host="localhost", user="alessio", password="alessio", database="prova")
         mycursor = mydb.cursor()
 
-        queryRimuoviPersonale = "UPDATE utilizzatore SET utilizzatore.Impiegato = 'false' WHERE utilizzatore.IDUtilizzatore = '" + codicePersonale + "'"
+        queryRimuoviPersonale = "UPDATE utilizzatore SET utilizzatore.Impiegato = 'true' WHERE utilizzatore.IDUtilizzatore = '" + codicePersonale + "'"
         mycursor.execute(queryRimuoviPersonale)
         mydb.commit()
 
