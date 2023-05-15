@@ -169,9 +169,9 @@ class Ui_PaginaOrdini(object):
         _translate = QtCore.QCoreApplication.translate
         PaginaOrdini.setWindowTitle(_translate("PaginaOrdini", "Form"))
         item = self.TableOrdini.horizontalHeaderItem(0)
-        item.setText(_translate("PaginaOrdini", "Numero PagineOrdine"))
+        item.setText(_translate("PaginaOrdini", "Numero"))
         item = self.TableOrdini.horizontalHeaderItem(1)
-        item.setText(_translate("PaginaOrdini", "Data PagineOrdine"))
+        item.setText(_translate("PaginaOrdini", "Data"))
         item = self.TableOrdini.horizontalHeaderItem(2)
         item.setText(_translate("PaginaOrdini", "Data Consegna"))
         item = self.TableOrdini.horizontalHeaderItem(3)
